@@ -1,0 +1,67 @@
+.head-with-border {
+	position: relative;
+	h2 {
+		text-align: center;
+		background-color: $redColor;
+		color: #fff;
+		margin: 50px auto;
+		border-radius: 15px;
+		max-width: 350px;
+		padding: 10px 15px;
+		text-transform: uppercase;
+		@media #{$maxMobile} {
+			max-width: 300px;
+		}
+		&:before {
+			content: '';
+			width: 100%;
+			height: 2px;
+			background-color: $grayColor;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			z-index: -1;
+		}
+	}
+}
+
+// Start Multi Heading Page To Transfer language
+.multiHead {
+	width: 100%;
+	height: 70px;
+	background-color: #4188a9;
+	.ChangeLang {
+		float: $float-left;
+		width: 50%;
+		text-align: $text-left;
+		padding-top: 10px;
+		a {
+			font-size: 30px;
+			color: #fff;
+			text-decoration: none;
+			line-height: 50px;
+			&:hover {
+				color: $upGray;
+			}
+		}
+	}
+	.websites {
+		float: $float-left;
+		width: 50%;
+		text-align: $text-right;
+		padding-top: 13px;
+		@media #{$maxMobile} {
+		    	padding-top: 18px;
+		    }
+		a {
+			font-size: 36px;
+		    text-decoration: none;
+		    padding: 18px;
+		    @media #{$maxMobile} {
+		    	font-size: 22px;
+		    	padding: 10px;
+		    }
+		}
+	}
+}
+// End Multi Heading Page To Transfer language

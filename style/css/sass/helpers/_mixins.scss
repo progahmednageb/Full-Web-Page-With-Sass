@@ -1,0 +1,43 @@
+// Prefixes Mixin
+// Simble Mixin Prefixer With All
+// Auto Add Prefixes To Property
+
+@mixin prefixer($property, $value, $prefixes: ()) {
+	@each $prefix in $prefixes {
+		#{'-' + $prefix + '-' + $property}: $value;
+	}
+	#{$property}: $value;
+}
+
+// Simble Main Transition Duration
+@mixin transition($l) {
+	-webkit-transition: ($l);
+	-moz-transition: ($l);
+	-ms-transition: ($l);
+	-o-transition: ($l);
+	transition: ($l);
+}
+
+
+// Simble Mixin Prefixer With All Keyframes
+// Auto Add Prefixes To Animation
+
+@mixin KeyFrame ($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+// Main Border Style Mixins
+
+@mixin mainBorder {
+	border-style: $MianBordrStyle;
+	border-color: $MainBordrColor;
+	border-width: $MainBordrWidth;
+}

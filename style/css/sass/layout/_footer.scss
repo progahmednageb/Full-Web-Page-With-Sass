@@ -1,0 +1,121 @@
+// Start Footer
+
+.footer {
+	background-color: $backColor;
+	overflow: hidden;
+	padding-top: 30px;
+	margin-top: 50px;
+	.gallery, .info, .contact {
+		float: $float-left;
+	}
+	.gallery {
+		@media #{$minSmall} {
+			width: 100%;
+		}
+		@media #{$minMedium} {
+			width: 50%;
+		}
+		.img-box {
+			overflow: hidden;
+			&:not(:last-of-type) {
+				padding-bottom: 20px;
+			}
+			img {
+				width: 150px;
+				height: 150px;
+				border: 7.5px groove $grayColor;
+				@media #{$minSmall} {
+					float: $float-left;
+				}
+			}
+			.text {
+				@media #{$minSmall} {
+					float: $float-left;
+					margin-right: 15px;
+					margin-left: 15px;
+					width: calc(100% - 180px);
+				}
+				h4 {
+					color: $redColor;
+					margin: 20px 0 0;
+				}
+				p {
+					color: $grayColor;
+					line-height: 1.7;
+					margin-top: 7px;
+				}
+			}
+		}
+	}
+	.info{
+		@media #{$minSmall} {
+			width: 50%;
+		}
+		@media #{$minMedium} {
+			width: 25%;
+		}
+		@media #{$maxMobile} {
+			margin-left: 17%;
+		}
+		ul {
+			color: $grayColor;
+			line-height: 1.8;
+			li {
+				span {
+					color: $redColor;
+				}
+			}
+		}
+		h4 {
+			color: $grayColor;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+		p {
+			color: $grayColor;
+			margin-top: 8px;
+		}
+	}
+	.contact {
+		@media #{$minSmall} {
+				width: 50%;
+			}
+		@media #{$minMedium} {
+				width: 25%;
+			}
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			@include mainBorder;
+			@include prefixer(border-radius, 7.5px, webkit moz ms o);
+			padding: 10px;
+			margin-bottom: 15px;
+			outline: none;
+			width: 100%;
+		}
+		textarea {
+			height: 140px;
+		}
+	}
+	.section-title {
+		color: $upGray;
+		font-weight: normal;
+	}
+	.copyright {
+		margin-top: 4.5%;
+		overflow: hidden;
+		padding: 30px 0;
+		border-top: 1.5px solid #444;
+		color: $upGray;
+		.text,
+		.outher {
+			float: $float-left;
+			width: 50%;
+		}
+		.outher {
+			text-align: $text-right;
+		}
+	}
+}
+// End Footer

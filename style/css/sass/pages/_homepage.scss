@@ -1,0 +1,195 @@
+// Start Counter
+.stat {
+	background: #305e73;
+	text-align:center;
+	float: $float-left;
+	min-width: 350px;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	left: 29%;
+	@media #{$minSmall} {
+		min-width: 160px;
+		left: 22%;
+	}
+	@media #{$maxMobile} {
+		min-width: 60px;
+		left: 19%;
+	}
+	.stat-count {
+		font-size: 30px;
+		color: #080;
+		font-weight: normal;
+		overflow:hidden;
+		font-family:"Georgia", Courier, monospace;
+		position: relative;
+		@media #{$minSmall} {
+			font-size: 23px;
+		}
+		@media #{$maxMobile} {
+			font-size: 15px;
+			color: $redColor;
+		}
+	}
+	.stat-detail {
+		color:#fff;
+		padding: 0;
+		font: italic 14px "Georgia", Courier, monospace;
+		@media #{$maxMobile} {
+			font-size: 13px;
+			color: #080;
+		}
+	}
+}
+// End Counter
+
+// Start Slider
+
+.slider {
+	blockquote {
+		font: {
+			size: 20px;
+			style: italic;
+			weight: bold;
+			family: Tahoma, Arial;
+		}
+		line-height: 1.7;
+		text-align: center;
+		color: #5e5e5e;
+		width: 80%;
+		margin: 30px auto;
+	}
+	img {
+		max-width: 100%;
+	}
+	.balls {
+		text-align: center;
+		li {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: $grayColor;
+			@include mainBorder;
+			border-color: $grayColor;
+			border-radius: 50%;
+			cursor: pointer;
+			@include transition(.5s);
+			&.active,
+			&:hover {
+				background-color: #fff;
+				@include mainBorder;
+			}
+		}
+	}
+}
+
+// End Slider
+
+// Start Services
+
+.services {
+	.service-box {
+		@media #{$minMedium} {
+			float: $float-left;
+			width: (100% / 3);
+			&:not(:last-of-type) {
+				padding-right: 20px;
+			}
+		}
+
+		@media #{$maxMobile} {
+			i {
+				display: block;
+				margin-bottom: 15px;
+			}
+		}
+		.service-title {
+			color: $upGray;
+			i {
+				font-size: 30px;
+				padding-right: 20px;
+				position: relative;
+				top: 2px;
+			}
+		}
+		.description {
+			color: #777;
+			line-height: 1.5;
+		}
+		.link {
+			color: $redColor;
+			text-decoration: none;
+		}
+	}
+}
+
+// End Services
+
+// Start Our Players
+
+.our-players {
+	.player-box {
+		@media #{$minSmall} {
+			float: $float-left;
+			width: (100% / 2);
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		@media #{$minMedium} {
+			width: (100% / 3);
+			text-align: $text-left;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		@media #{$minLarge} {
+			width: (100% / 5);
+		}
+		@media #{$maxMobile} {
+			margin-bottom: 40px;
+		}
+		img {
+			width: 200px;
+			height: 200px;
+		}
+		.player-title {
+			color: $upGray;
+			font-weight: normal;
+			span {
+				font-weight: bold;
+			}
+		}
+		.description {
+			color: #777;
+			line-height: 1.5;
+		}
+		.link {
+			color: $redColor;
+			text-decoration: none;
+		}
+	}
+}
+
+// End Our Players
+
+// Start Lorem Ipsum
+
+.lorem-ipsum {
+	.lorem-box {
+		float: $float-left;
+		width: (94% / 3);
+		&:not(:last-of-type) {
+			margin-right: 3%;
+		}
+		@media #{$maxMobile} {
+			width: (94% / 1);
+			&:not(:last-of-type) {
+				margin-bottom: 3%;
+			}
+		}
+		.lorem-img {
+			max-width: 100%;
+		}
+	}
+}
+
+// End Lorem Ipsum

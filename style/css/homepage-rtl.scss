@@ -1,0 +1,151 @@
+@import 'sass/helpers/variables';
+@import 'sass/componants/headings';
+
+// Float
+$float-left: right;
+$float-right: left;
+
+// Text
+$text-right: left;
+$text-left: right;
+
+
+// Start Style 
+
+// Start Counter
+// Start Counter
+.stat {
+	float: $float-left;
+	right: 29%;
+	@media #{$minSmall} {
+		width: 160px;
+		right: 22%;
+	}
+	@media #{$maxMobile} {
+		width: 100px;
+		right: 19%;
+	}
+}
+// End Counter
+// End Counter
+
+// Start Multi Heading Page To Transfer language
+.multiHead {
+	.ChangeLang {
+		float: $float-left;
+		text-align: $text-left;
+	}
+	.websites {
+		float: $float-left;
+		text-align: $text-right;
+	}
+}
+// End Multi Heading Page To Transfer language
+
+// Start Header
+.header {
+	.logo{
+		@media #{$minMedium} {
+			float: $float-left;
+			text-align: $text-left;
+		}
+		.the-toggler {
+			right: auto;
+			left: 15px;
+		}
+	}
+	.navbar {
+		@media #{$minMedium} {
+			float: $float-left;
+		}
+		li{
+			float: $float-left;
+			@media #{$maxMobile} {
+				text-align: $text-left;
+			}
+		}
+			}
+		}
+// End Header
+
+// Start Home Page
+
+// Start Slider
+        // empty
+// End Slider
+
+// Start Services
+
+.services {
+	.service-box {
+		@media #{$minMedium} {
+			float: $float-left;
+		}
+	}
+}
+
+// End Services
+
+// Start Our Players
+
+.our-players {
+	.player-box {
+		@media #{$minSmall} {
+			float: $float-left;
+		}
+		@media #{$minMedium} {
+			text-align: $text-left;
+		}
+	}
+}
+
+// End Our Players
+
+// Start Lorem Ipsum
+
+.lorem-ipsum {
+	.lorem-box {
+		float: $float-left;
+	}
+}
+
+// End Lorem Ipsum
+// End Home Page
+
+// Start Footer
+// Start Footer
+
+.footer {
+	.gallery, .info, .contact {
+		float: $float-left;
+	}
+	.gallery {
+
+		}
+		.info {
+			@media #{$maxMobile} {
+				margin-right: 17%;
+			}
+		}
+		.img-box {
+			img {
+				@media #{$minSmall} {
+					float: $float-left !important;
+				}
+			}
+			.text {
+				@media #{$minSmall} {
+					float: $float-left;
+				}
+			}
+		}
+	}
+		.text,
+		.outher {
+			float: $float-left  !important;
+		}
+		.outher {
+			text-align: $text-right;
+		}
+// End Footer
+// End Footer
